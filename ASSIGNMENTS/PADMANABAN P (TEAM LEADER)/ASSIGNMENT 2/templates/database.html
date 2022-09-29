@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Database Page </title>
+{% endblock %}
+
+{% block body %}
+
+<div class="table" style="margin-top: 50px; margin-bottom: 50px;">
+    <div class="card-body">
+        <h5 class="card-title" style=" margin-bottom: -50px; text-align: center;">Registered Users</h5>
+<table class="table table-borderless table-hover" style="margin-top: 25px; margin-bottom: -50px;">
+   <thead style="font-weight: 500;">
+      <td>First Name</td>
+      <td>Last Name</td>
+      <td>Email-ID</td>
+      <td>Password</td>
+   </thead>
+   
+   {% for row in users %}
+      <tr>
+         <td>{{row["fname"]}}</td>
+         <td>{{row["lname"]}}</td>
+         <td> {{ row["email"]}}</td>
+         <td>{{row['password']}}</td>	
+      </tr>
+   {% endfor %}
+</table>
+</div>
+</div>
+{% endblock %}
