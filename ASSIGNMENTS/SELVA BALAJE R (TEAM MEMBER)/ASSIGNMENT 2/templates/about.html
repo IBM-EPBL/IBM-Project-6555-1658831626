@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> About Page </title>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <p>
+        <b class="white">Referring to </b><b style="font-size: 20px; font-weight: 400;color: rgb(0, 0, 0);">  my page.</b>
+    <p style="color: rgb(1, 1, 1);">This webpage was built by me using Flask Web-framework and Bootstrap.</p>
+        
+    
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="static/images/f.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Flask</h5>
+            <p class="card-text">Flask is used for developing web applications using python, implemented on Werkzeug and Jinja2.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated curently</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="static/images/b.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">Bootstrap is a free, open source front-end development framework for the creation of websites and web apps.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated curently</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="static/images/s.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Database</h5>
+            <p class="card-text">A database is an organized collection of structured information, or data, typically stored electronically in a computer system.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated curently</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+{% endblock %}
