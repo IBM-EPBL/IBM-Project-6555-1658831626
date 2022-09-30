@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Sign Up Page </title>
+{% endblock %}
+
+{% block body %}
+<div class="wrapper" style="margin-top: 150px; margin-left: 500px;">
+    <section class="form signup">
+      
+       <form action = "{{ url_for('addrec') }}" method = "POST">
+        
+        <div class="error-txt"></div> 
+        <div class="name-details">
+          <div class="field input">
+            <label>First Name</label>
+            <input type="text" name="fname" placeholder="First Name" required>
+          </div>  
+          <div class="field input">
+            <label>Last Name</label>
+            <input type="text" name="lname" placeholder="Last Name" required>
+          </div>
+        </div>
+          <div class="field input">
+            <label>Email Address</label>
+            <input type="text" name="email" placeholder="Email Address" required>
+          </div>  
+          <div class="field input">
+            <label>Password</label>
+            <input type="Password" name="password" placeholder="Enter new password" required>
+            <i class="fas fa-eye"></i>
+          </div>    
+          <div class="field button">
+            <input type="submit" name="submit" value="Signup">
+          </div>    
+      </form>
+      {{ msg }}
+    </section>
+  </div>
+{% endblock %}

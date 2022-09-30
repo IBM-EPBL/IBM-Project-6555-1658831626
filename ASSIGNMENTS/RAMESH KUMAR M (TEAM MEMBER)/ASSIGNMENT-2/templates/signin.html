@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Sign In Page </title>
+{% endblock %}
+
+{% block body %}
+
+<div class="ramesh-container" style="margin-top: 150px; margin-left: 600px;" >
+    <div class="card-body">
+      <h5 class="card-title" style="margin-bottom: 38px;">Sign In</h5>
+      <form>
+        <label>Email ID</label>  
+        <div class="input-group mb-3">
+      <input class="form-control rad" type="email" name="email" placeholder="Enter your Email-ID" /></div>
+      <label>Password</label>  
+      <div class="input-group mb-3">
+      <input class="form-control rad" type="password" name="password" placeholder="Enter your Password" /></div>
+      <div class="input-group mb-3">
+      <input class="btn btn-light center rad" type="submit" name="submit" value="Sign In"/></div>
+    </form>
+    </div>
+  </div>
+{% endblock %}
