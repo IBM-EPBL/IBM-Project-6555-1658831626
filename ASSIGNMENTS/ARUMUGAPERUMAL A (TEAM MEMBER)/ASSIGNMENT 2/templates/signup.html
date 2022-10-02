@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Sign Up Page </title>
+{% endblock %}
+
+{% block body %}
+<div class="padhu-container" style="margin-top: 70px;">
+    <div class="card-body">
+      <h5 class="card-title" style="margin-bottom: 25px; text-align: center;">Sign Up</h5>
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+        <label>First Name</label>  
+        <div class="input-group mb-3">
+      <input class="form-control rad" type="text" name="fname" placeholder="Enter your First Name" /></div>
+      <label>Last Name</label>  
+        <div class="input-group mb-3">
+      <input class="form-control rad" type="text" name="lname" placeholder="Enter your Last Name" /></div>
+      <label>Email ID</label>  
+        <div class="input-group mb-3">
+      <input class="form-control rad" type="email" name="email" placeholder="Enter your Email-ID" /></div>
+        <label>Password</label>  
+        <div class="input-group mb-3">
+      <input class="form-control rad" type="password" name="password" placeholder="Type a Password" /></div>
+      <label>Confirm Password</label>  
+      <div class="input-group mb-3">
+      <input class="form-control rad" type="password" name="cpassword" placeholder="Re-type your Password" /></div>
+      <div class="input-group mb-3">
+      <input class="btn btn-dark center rad" type="submit" name="submit" value="Sign Up"/></div>
+    </form>
+    {{ msg }}
+    </div>
+  </div>
+{% endblock %}
