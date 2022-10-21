@@ -1,1 +1,0 @@
-chatbot URL:https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fjp-tok.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-0fc890cd-ce9b-4421-b563-d3ba53051148%3A%3A731791ef-e64d-497e-b033-c5a324a9d645&integrationID=41e7bfd9-441c-4e3f-a826-4100a7e798d4&region=jp-tok&serviceInstanceID=0fc890cd-ce9b-4421-b563-d3ba53051148
